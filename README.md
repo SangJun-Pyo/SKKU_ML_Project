@@ -17,6 +17,16 @@ Kaggle의 Wine Enthusiast 리뷰 약 11만 건으로 두 가지를 확인했습�
 | $30 예산에서 20병 중 1병 고르기 | 90점 이상을 고를 확률: 최고가 선택 41% → XGBoost 65%, 평균 가격은 $29.4 → $25.1 |
 | 나라별 가성비 차이 | 상당 부분이 나라마다 다른 평론가 때문 (오스트리아 +1.8점 → 같은 평론가끼리 비교 시 +0.2점) |
 
+## Colab에서 통계 지표 바로 보기
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SangJun-Pyo/SKKU_ML_Project/blob/main/notebooks/wine_stats_colab.ipynb)
+
+[`notebooks/wine_stats_colab.ipynb`](notebooks/wine_stats_colab.ipynb)는 발표에 쓴 통계 지표를 `print`로 모두 보여 주는 노트북입니다. 위 배지를 누르면 Colab에서 바로 열립니다(저장소가 공개 상태여야 함).
+
+- **1부 (데이터 없이 즉시)**: 저장된 결과를 주제별로 출력합니다. 기초 통계량, 상관·공분산·GVIF, OLS·로지스틱 검정, 모델별 R²·MAE·AUC, 과적합, SHAP, 시뮬레이션, 평론가 효과가 들어 있습니다.
+- **2부 (Kaggle CSV 필요, 약 2분, 트리 모델 포함 시 10~15분)**: 원본 데이터로 직접 다시 계산합니다. statsmodels 회귀 요약표, describe, KS 검정, 모델 재학습이 들어 있습니다.
+- **3부 (선택, 10~15분)**: 전체 파이프라인을 다시 실행합니다.
+
 슬라이드에 쓴 모든 숫자는 [`outputs/key_numbers.json`](outputs/key_numbers.json)에서 나오고, 발표용 그래프는 [`outputs/figures_ko/`](outputs/figures_ko/)에 있습니다. 분석 메모는 [`reports/findings.md`](reports/findings.md)를 보세요.
 
 ---
@@ -126,6 +136,7 @@ SKKU_ML_Project/
 ├── outputs/
 │   ├── key_numbers.json  슬라이드에 쓴 모든 숫자
 │   └── figures_ko/       발표용 그래프
+├── notebooks/            Colab 노트북 (통계 지표 출력)
 ├── reports/findings.md   분석 결과 메모
 ├── audit/                결과를 처음부터 다시 계산해 대조한 독립 점검 (217개 항목)
 └── requirements.txt
