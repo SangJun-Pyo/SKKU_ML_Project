@@ -1,0 +1,262 @@
+{
+ "y_matches_points": true,
+ "test_base_rate_pct": 37.7860540249484,
+ "auc_saved": {
+  "prob_logit_price": 0.8150607288212248,
+  "prob_logit_all": 0.8411686940154808,
+  "prob_logit_l1": 0.8411936774929402,
+  "prob_xgb_clf": 0.8570524301442228,
+  "score_xgb_reg": 0.8541120538512561
+ },
+ "auc_saved_sklearn_check": {
+  "prob_logit_price": 0.8150607288212248,
+  "prob_logit_all": 0.8411686940154808,
+  "prob_logit_l1": 0.8411936774929403,
+  "prob_xgb_clf": 0.8570524301442228,
+  "score_xgb_reg": 0.8541120538512561
+ },
+ "auc_ridge_meta_price_score": 0.8384891839400177,
+ "auc_ridge_price_score": 0.8150607288212248,
+ "logloss_saved": {
+  "prob_logit_price": 0.5078444701553704,
+  "prob_logit_all": 0.4741686954670645,
+  "prob_logit_l1": 0.47413478600604464,
+  "prob_xgb_clf": 0.4500646831642908
+ },
+ "auc_diff_own_boot": {
+  "xgb_clf-logit_all": {
+   "diff": 0.015883736128742054,
+   "ci95": [
+    0.013975043358624309,
+    0.01792524694770037
+   ]
+  },
+  "xgb_clf-xgb_reg": {
+   "diff": 0.0029403762929667288,
+   "ci95": [
+    0.0014688994118923853,
+    0.004574998343169664
+   ]
+  },
+  "logit_all-ridge_meta_price": {
+   "diff": 0.0026795100754630763,
+   "ci95": [
+    0.0016845375381560946,
+    0.0037138646869013157
+   ]
+  }
+ },
+ "logit_l2_refit": {
+  "valid_logloss_grid": {
+   "0.01": 0.4792291465657752,
+   "0.1": 0.47489577421934454,
+   "1.0": 0.47473785806053354,
+   "10.0": 0.4751692329924368
+  },
+  "C_chosen": 1.0,
+  "test_auc": 0.8411686683211261,
+  "test_logloss": 0.4741687000567032,
+  "corr_with_saved": 0.9999999999874233
+ },
+ "sim": {
+  "20": {
+   "within_budget": true,
+   "distinct20": true,
+   "Logistic": {
+    "share_ge90_pct_EV": 38.550000000000004,
+    "share_ge90_pct_saved": 38.5,
+    "key_numbers": 38.5,
+    "saved_pick_valid_argmax": 1000,
+    "markets_with_ties": 3
+   },
+   "XGBClf": {
+    "share_ge90_pct_EV": 41.9,
+    "share_ge90_pct_saved": 41.9,
+    "key_numbers": 41.9,
+    "saved_pick_valid_argmax": 1000,
+    "markets_with_ties": 2
+   },
+   "Main": {
+    "share_ge90_pct_EV": 41.9,
+    "share_ge90_pct_saved": 41.9,
+    "key_numbers": 41.9,
+    "saved_pick_valid_argmax": 1000,
+    "markets_with_ties": 1
+   }
+  },
+  "30": {
+   "within_budget": true,
+   "distinct20": true,
+   "Logistic": {
+    "share_ge90_pct_EV": 60.0,
+    "share_ge90_pct_saved": 60.0,
+    "key_numbers": 60.0,
+    "saved_pick_valid_argmax": 1000,
+    "markets_with_ties": 0
+   },
+   "XGBClf": {
+    "share_ge90_pct_EV": 64.4,
+    "share_ge90_pct_saved": 64.4,
+    "key_numbers": 64.4,
+    "saved_pick_valid_argmax": 1000,
+    "markets_with_ties": 1
+   },
+   "Main": {
+    "share_ge90_pct_EV": 64.7,
+    "share_ge90_pct_saved": 64.7,
+    "key_numbers": 64.7,
+    "saved_pick_valid_argmax": 1000,
+    "markets_with_ties": 0
+   },
+   "Main_minus_Logistic_ge90": {
+    "diff": 4.7,
+    "ci95": [
+     2.0,
+     7.5
+    ],
+    "key_numbers": {
+     "diff": 4.7,
+     "ci95_low": 1.9,
+     "ci95_high": 7.5
+    }
+   }
+  },
+  "50": {
+   "within_budget": true,
+   "distinct20": true,
+   "Logistic": {
+    "share_ge90_pct_EV": 77.8,
+    "share_ge90_pct_saved": 77.8,
+    "key_numbers": 77.8,
+    "saved_pick_valid_argmax": 1000,
+    "markets_with_ties": 0
+   },
+   "XGBClf": {
+    "share_ge90_pct_EV": 82.15,
+    "share_ge90_pct_saved": 82.1,
+    "key_numbers": 82.1,
+    "saved_pick_valid_argmax": 1000,
+    "markets_with_ties": 1
+   },
+   "Main": {
+    "share_ge90_pct_EV": 80.75,
+    "share_ge90_pct_saved": 80.7,
+    "key_numbers": 80.7,
+    "saved_pick_valid_argmax": 1000,
+    "markets_with_ties": 2
+   }
+  }
+ },
+ "sparse_from_preds": {
+  "lasso_meta_price": {
+   "test": {
+    "MAE": 1.8177553577915468,
+    "R2": 0.4476839479189372
+   },
+   "valid": {
+    "MAE": 1.817755073275072,
+    "R2": 0.44613360909326094
+   }
+  },
+  "enet_meta_price": {
+   "test": {
+    "MAE": 1.8183593069758692,
+    "R2": 0.4473225378223957
+   },
+   "valid": {
+    "MAE": 1.8181966397348999,
+    "R2": 0.44587388585066345
+   }
+  },
+  "ridge_meta_price": {
+   "test": {
+    "MAE": 1.8175618369402307,
+    "R2": 0.4477172995695049
+   },
+   "valid": {
+    "MAE": 1.8175513840248754,
+    "R2": 0.44615762944491144
+   }
+  }
+ },
+ "lasso_refit": {
+  "n_coef": 348,
+  "n_onehot": 345,
+  "n_zero": 64,
+  "n_abs_lt_1e-3": 64,
+  "test": {
+   "MAE": 1.8177553577915495,
+   "R2": 0.4476839479189372
+  }
+ },
+ "enet_refit": {
+  "n_coef": 348,
+  "n_onehot": 345,
+  "n_zero": 25,
+  "n_abs_lt_1e-3": 27,
+  "test": {
+   "MAE": 1.8183593069758686,
+   "R2": 0.4473225378223957
+  }
+ },
+ "lasso_alpha_3e-05_n_zero": 26,
+ "lasso_alpha_1e-05_n_zero": 13,
+ "lasso_seconds": 92.1,
+ "ridge_trainvalid_vs_test": {
+  "fit_rows": {
+   "MAE": 1.8181099267980336,
+   "R2": 0.45426028800845086
+  },
+  "test": {
+   "MAE": 1.8175603687921118,
+   "R2": 0.4477172809629727
+  },
+  "n_over_p": 256.39080459770116
+ },
+ "raw_missing_pct": {
+  "price": 6.92,
+  "designation": 28.83,
+  "region_1": 16.35,
+  "region_2": 61.14,
+  "taster_name": 20.19,
+  "taster_twitter_handle": 24.02,
+  "country": 0.05,
+  "province": 0.05,
+  "variety": 0.0
+ },
+ "raw_profile_csv": {
+  "price": 6.9,
+  "designation": 28.8,
+  "region_1": 16.3,
+  "region_2": 61.1,
+  "taster_name": 20.2,
+  "taster_twitter_handle": 24.0,
+  "country": 0.0,
+  "province": 0.0,
+  "variety": 0.0
+ },
+ "missing_pct_after_dedup": {
+  "price": 7.0,
+  "taster_name": 20.77
+ },
+ "quiz": {
+  "28150": {
+   "title": "Opus One 2006 Red (Napa Valley)",
+   "price": 195.0,
+   "points": 90,
+   "taster": null,
+   "in_clean": true,
+   "raw_rows_same_title": 1,
+   "split": "train"
+  },
+  "26694": {
+   "title": "Montes 2006 Alpha Cabernet Sauvignon (Colchagua Valley)",
+   "price": 28.0,
+   "points": 91,
+   "taster": "Michael Schachner",
+   "in_clean": true,
+   "raw_rows_same_title": 1,
+   "split": "train"
+  }
+ }
+}

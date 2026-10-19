@@ -1,0 +1,253 @@
+{
+  "slope_per_doubling": 2.0117417491277805,
+  "intercept": 78.78712795554303,
+  "max_abs_diff_vs_saved_price_only_pred": 1.2273842031618187e-06,
+  "country_levels_mine": 12,
+  "country_levels_builder": 12,
+  "country_max_abs_mean_diff": 1.540020089230154e-07,
+  "country_n_mismatch": 0,
+  "country_top5": {
+    "Austria": 1.8162,
+    "Germany": 1.2634,
+    "Portugal": 0.9709,
+    "Australia": 0.3686,
+    "New Zealand": 0.2435
+  },
+  "country_bottom5": {
+    "Argentina": -0.7173,
+    "Chile": -0.5676,
+    "Spain": -0.3579,
+    "US": -0.1639,
+    "Italy": -0.1075
+  },
+  "variety_levels_mine": 36,
+  "variety_levels_builder": 36,
+  "variety_max_abs_mean_diff": 2.486543491664328e-07,
+  "variety_n_mismatch": 0,
+  "variety_top5": {
+    "Grüner Veltliner": 2.0704,
+    "Portuguese Red": 1.4459,
+    "Riesling": 1.3478,
+    "Pinot Gris": 0.822,
+    "Gewürztraminer": 0.6795
+  },
+  "variety_bottom5": {
+    "Champagne Blend": -0.8684,
+    "Merlot": -0.7609,
+    "Cabernet Franc": -0.6873,
+    "Sangiovese": -0.6472,
+    "Pinot Grigio": -0.6224
+  },
+  "multi_country_critics": [
+    "Anna Lee C. Iijima",
+    "Anne Krebiehl MW",
+    "Joe Czerwinski",
+    "Lauren Buzzeo",
+    "Michael Schachner",
+    "Roger Voss",
+    "Susan Kostrzewa"
+  ],
+  "within_critic": {
+    "Austria": {
+      "raw_resid_all_test_rows": 1.8162,
+      "builder_def_premium(incl_self)": 0.1375,
+      "premium_vs_other_countries_only": 0.2245,
+      "per_critic": {
+        "Anne Krebiehl MW": {
+          "n": 341,
+          "cell_mean_resid": 2.4366,
+          "critic_other_countries": {
+            "France": 243
+          },
+          "premium_vs_others_only": 0.2098
+        },
+        "Roger Voss": {
+          "n": 159,
+          "cell_mean_resid": 0.5601,
+          "critic_other_countries": {
+            "France": 2653,
+            "Portugal": 920
+          },
+          "premium_vs_others_only": 0.256
+        }
+      }
+    },
+    "Germany": {
+      "raw_resid_all_test_rows": 1.2634,
+      "builder_def_premium(incl_self)": 0.7712,
+      "premium_vs_other_countries_only": 1.4287,
+      "per_critic": {
+        "Anna Lee C. Iijima": {
+          "n": 329,
+          "cell_mean_resid": 1.513,
+          "critic_other_countries": {
+            "US": 417
+          },
+          "premium_vs_others_only": 1.7759
+        },
+        "Joe Czerwinski": {
+          "n": 60,
+          "cell_mean_resid": -0.0938,
+          "critic_other_countries": {
+            "Australia": 394,
+            "France": 205,
+            "New Zealand": 232
+          },
+          "premium_vs_others_only": -0.4752
+        }
+      }
+    },
+    "Portugal": {
+      "raw_resid_all_test_rows": 0.9709,
+      "builder_def_premium(incl_self)": 0.6652,
+      "premium_vs_other_countries_only": 0.8829,
+      "per_critic": {
+        "Roger Voss": {
+          "n": 920,
+          "cell_mean_resid": 0.9802,
+          "critic_other_countries": {
+            "Austria": 159,
+            "France": 2653
+          },
+          "premium_vs_others_only": 0.8829
+        }
+      }
+    },
+    "Argentina": {
+      "raw_resid_all_test_rows": -0.7173,
+      "builder_def_premium(incl_self)": -0.2048,
+      "premium_vs_other_countries_only": -0.2816,
+      "per_critic": {
+        "Michael Schachner": {
+          "n": 730,
+          "cell_mean_resid": -0.7173,
+          "critic_other_countries": {
+            "Chile": 811,
+            "Spain": 1135
+          },
+          "premium_vs_others_only": -0.2816
+        }
+      }
+    },
+    "Chile": {
+      "raw_resid_all_test_rows": -0.5676,
+      "builder_def_premium(incl_self)": -0.0568,
+      "premium_vs_other_countries_only": -0.0815,
+      "per_critic": {
+        "Michael Schachner": {
+          "n": 811,
+          "cell_mean_resid": -0.5693,
+          "critic_other_countries": {
+            "Argentina": 730,
+            "Spain": 1135
+          },
+          "premium_vs_others_only": -0.0815
+        }
+      }
+    },
+    "Spain": {
+      "raw_resid_all_test_rows": -0.3579,
+      "builder_def_premium(incl_self)": 0.1723,
+      "premium_vs_other_countries_only": 0.2991,
+      "per_critic": {
+        "Michael Schachner": {
+          "n": 1135,
+          "cell_mean_resid": -0.3403,
+          "critic_other_countries": {
+            "Argentina": 730,
+            "Chile": 811
+          },
+          "premium_vs_others_only": 0.2991
+        }
+      }
+    },
+    "France": {
+      "raw_resid_all_test_rows": 0.2294,
+      "builder_def_premium(incl_self)": -0.2165,
+      "premium_vs_other_countries_only": -0.7263,
+      "per_critic": {
+        "Anne Krebiehl MW": {
+          "n": 243,
+          "cell_mean_resid": 2.2268,
+          "critic_other_countries": {
+            "Austria": 341
+          },
+          "premium_vs_others_only": -0.2098
+        },
+        "Joe Czerwinski": {
+          "n": 205,
+          "cell_mean_resid": 0.3851,
+          "critic_other_countries": {
+            "Australia": 394,
+            "Germany": 60,
+            "New Zealand": 232
+          },
+          "premium_vs_others_only": 0.0465
+        },
+        "Lauren Buzzeo": {
+          "n": 100,
+          "cell_mean_resid": -0.068,
+          "critic_other_countries": {
+            "South Africa": 161
+          },
+          "premium_vs_others_only": -0.3202
+        },
+        "Roger Voss": {
+          "n": 2653,
+          "cell_mean_resid": 0.0697,
+          "critic_other_countries": {
+            "Austria": 159,
+            "Portugal": 920
+          },
+          "premium_vs_others_only": -0.8487
+        }
+      }
+    },
+    "US": {
+      "raw_resid_all_test_rows": -0.1639,
+      "builder_def_premium(incl_self)": -0.8381,
+      "premium_vs_other_countries_only": -1.8371,
+      "per_critic": {
+        "Anna Lee C. Iijima": {
+          "n": 417,
+          "cell_mean_resid": -0.2629,
+          "critic_other_countries": {
+            "Germany": 329
+          },
+          "premium_vs_others_only": -1.7759
+        },
+        "Susan Kostrzewa": {
+          "n": 40,
+          "cell_mean_resid": -2.3705,
+          "critic_other_countries": {
+            "South Africa": 53
+          },
+          "premium_vs_others_only": -2.4747
+        }
+      }
+    }
+  },
+  "builder_def_zero_sum_within_critic": {
+    "Anna Lee C. Iijima": 0.0,
+    "Anne Krebiehl MW": -0.0,
+    "Joe Czerwinski": -0.0,
+    "Lauren Buzzeo": -0.0,
+    "Michael Schachner": -0.0,
+    "Roger Voss": -0.0,
+    "Susan Kostrzewa": 0.0
+  },
+  "under20_reproduced_by_pred": true,
+  "under20_pred_monotone_desc": true,
+  "under20_overlap_with_actual_top10": 0,
+  "under20_mean_actual": 91.2,
+  "under20_n_ge90": 10,
+  "under20_countries": {
+    "Austria": 8,
+    "Israel": 1,
+    "France": 1
+  },
+  "under20_pool_rows": 8513,
+  "under20_pool_share_ge90_pct": 11.018442382238929,
+  "under20_pool_mean_points": 86.50640197345237,
+  "under20_top50_share_ge90_pct": 74.0
+}

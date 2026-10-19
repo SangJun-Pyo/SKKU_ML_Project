@@ -1,0 +1,50 @@
+{
+  "raw_rows": 129971,
+  "raw_cols": 14,
+  "after_exact_dup": 119988,
+  "after_required": 111537,
+  "required_breakdown": {
+    "price_missing": 8395,
+    "country_missing": 59,
+    "province_missing": 59,
+    "variety_missing": 1
+  },
+  "after_desc_dup": 111510,
+  "after_desc_dup_raw_text_only": 111511,
+  "clean_csv_rows": 111510,
+  "row_id_set_identical": true,
+  "row_id_sym_diff": 0,
+  "split_rows": {
+    "train": 71381,
+    "test": 22286,
+    "valid": 17843
+  },
+  "title_norm_rederived_mismatch": 0,
+  "unique_titles": {
+    "train": 70748,
+    "valid": 17688,
+    "test": 22109
+  },
+  "title_overlap": {
+    "train-valid": 0,
+    "train-test": 0,
+    "valid-test": 0
+  },
+  "desc_overlap": {
+    "train-test": 0,
+    "valid-test": 0,
+    "train-valid": 0
+  },
+  "novintage_leak": {
+    "test_rows": 22286,
+    "test_rows_sharing_wine_with_trainvalid": 9771,
+    "share_rows_pct": 43.843668670914475,
+    "test_unique_titles": 22109,
+    "test_titles_sharing": 9727,
+    "share_titles_pct": 43.99565787688272
+  },
+  "novintage_leak_valid_vs_train_rows_pct": 38.934035756319005,
+  "novintage_matched_abs_points_gap_mean": 1.8455011834502162,
+  "test_rows_winery_seen_in_trainvalid_pct": 94.90711657542852,
+  "split_reproduced_mismatch_rows": 0
+}

@@ -1,0 +1,17 @@
+{
+  "saved_sample_share_pct": {
+    "country": 7.5788,
+    "province": 9.7552,
+    "variety": 10.9465,
+    "log_price": 57.0638,
+    "vintage": 14.6557
+  },
+  "saved_sample_additivity_maxerr": 0.0001516209514846878,
+  "own_refit_share_pct": {
+    "country": 8.3229,
+    "log_price": 56.831,
+    "province": 9.6235,
+    "variety": 10.7841,
+    "vintage": 14.4384
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "max_abs_logprice_col_diff": 8.881784197001252e-16,
+  "pearson_raw": 0.4165942254881117,
+  "pearson_log": 0.6177565240429702,
+  "r2_log_insample": 0.38162312299765283,
+  "spearman": 0.6125607726603395,
+  "share_ge90_pct": 37.752667922159446,
+  "price_min_med_max": [
+    4.0,
+    25.0,
+    3300.0
+  ],
+  "points_median": 88.0,
+  "n_countries": 42,
+  "n_provinces": 422,
+  "n_varieties": 691,
+  "vintage_present_pct": 96.55187875526859,
+  "price_buckets": {
+    "<=$10": {
+      "n": 5913,
+      "median": 85.0,
+      "mean": 84.9719,
+      "share_ge90_pct": 1.1838
+    },
+    "($10,$20]": {
+      "n": 36806,
+      "median": 87.0,
+      "mean": 86.7594,
+      "share_ge90_pct": 12.8756
+    },
+    "($20,$30]": {
+      "n": 24798,
+      "median": 88.0,
+      "mean": 88.2304,
+      "share_ge90_pct": 34.0229
+    },
+    "($30,$50]": {
+      "n": 25519,
+      "median": 90.0,
+      "mean": 89.6061,
+      "share_ge90_pct": 56.0563
+    },
+    "($50,$100]": {
+      "n": 15245,
+      "median": 91.0,
+      "mean": 91.1004,
+      "share_ge90_pct": 76.4185
+    },
+    ">$100": {
+      "n": 3229,
+      "median": 93.0,
+      "mean": 92.8817,
+      "share_ge90_pct": 89.7182
+    }
+  },
+  "quiz": {
+    "15428": {
+      "title": "Columbia Crest 2014 Grand Estates Cabernet Sauvignon (Columbia Valley (WA))",
+      "price": 12.0,
+      "points": 90,
+      "variety": "Cabernet Sauvignon",
+      "taster": "Sean P. Sullivan",
+      "in_clean": true,
+      "split": "train"
+    },
+    "37412": {
+      "title": "Laird 2013 Cabernet Sauvignon (Napa Valley)",
+      "price": 60.0,
+      "points": 90,
+      "variety": "Cabernet Sauvignon",
+      "taster": "Virginie Boone",
+      "in_clean": true,
+      "split": "train"
+    }
+  },
+  "quiz_15428_raw_rows_same_title": 1,
+  "quiz_37412_raw_rows_same_title": 1,
+  "text_only_test_R2": 0.7038987024378703,
+  "text_only_test_MAE": 1.3267083837732874,
+  "corr_desc_length_points": 0.5804284358637961
+}

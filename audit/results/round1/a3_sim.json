@@ -1,0 +1,355 @@
+{
+  "checks": {
+    "all_market_rows_in_test": true
+  },
+  "by_budget": {
+    "20": {
+      "checks": {
+        "n_markets": 1000,
+        "all_size_20": true,
+        "all_20_distinct_titles": true,
+        "all_within_budget": true,
+        "max_price_seen": 20.0,
+        "pool_unique_titles_used": 7616
+      },
+      "markets_with_ties": {
+        "MaxPrice": 842,
+        "Ridge": 2,
+        "Main": 1
+      },
+      "saved_pick_in_my_candidate_set": {
+        "MaxPrice": 1000,
+        "Ridge": 1000,
+        "Main": 1000
+      },
+      "strategies": {
+        "Random": {
+          "mean_points_EV": 86.51405,
+          "share_ge90_pct_EV": 11.095000000000002,
+          "mean_price_EV": 15.072650000000001
+        },
+        "MaxPrice": {
+          "mean_points_EV": 87.58256626984128,
+          "share_ge90_pct_EV": 21.881626984126985,
+          "mean_price_EV": 19.949,
+          "mean_points_saved_picks": 87.579,
+          "share_ge90_pct_saved_picks": 22.0,
+          "mean_price_saved_picks": 19.949
+        },
+        "Ridge": {
+          "mean_points_EV": 88.65,
+          "share_ge90_pct_EV": 37.2,
+          "mean_price_EV": 18.226,
+          "mean_points_saved_picks": 88.648,
+          "share_ge90_pct_saved_picks": 37.2,
+          "mean_price_saved_picks": 18.226
+        },
+        "Main": {
+          "mean_points_EV": 88.9,
+          "share_ge90_pct_EV": 41.9,
+          "mean_price_EV": 18.236,
+          "mean_points_saved_picks": 88.899,
+          "share_ge90_pct_saved_picks": 41.9,
+          "mean_price_saved_picks": 18.236
+        }
+      },
+      "bootstrap_own_seed": {
+        "Main-MaxPrice__ge90_pctp": {
+          "diff": 19.9,
+          "ci95": [
+            16.3,
+            23.6
+          ]
+        },
+        "Main-MaxPrice__points": {
+          "diff": 1.32,
+          "ci95": [
+            1.138,
+            1.504
+          ]
+        },
+        "Main-MaxPrice__price_usd": {
+          "diff": -1.713,
+          "ci95": [
+            -1.842,
+            -1.591
+          ]
+        },
+        "Ridge-MaxPrice__ge90_pctp": {
+          "diff": 15.2,
+          "ci95": [
+            11.6,
+            18.8
+          ]
+        },
+        "Ridge-MaxPrice__points": {
+          "diff": 1.069,
+          "ci95": [
+            0.89,
+            1.253
+          ]
+        },
+        "Ridge-MaxPrice__price_usd": {
+          "diff": -1.723,
+          "ci95": [
+            -1.848,
+            -1.604
+          ]
+        },
+        "Main-Ridge__ge90_pctp": {
+          "diff": 4.7,
+          "ci95": [
+            2.2,
+            7.3
+          ]
+        },
+        "Main-Ridge__points": {
+          "diff": 0.251,
+          "ci95": [
+            0.13497500000000004,
+            0.37
+          ]
+        },
+        "Main-Ridge__price_usd": {
+          "diff": 0.01,
+          "ci95": [
+            -0.11,
+            0.13002499999999964
+          ]
+        }
+      }
+    },
+    "30": {
+      "checks": {
+        "n_markets": 1000,
+        "all_size_20": true,
+        "all_20_distinct_titles": true,
+        "all_within_budget": true,
+        "max_price_seen": 30.0,
+        "pool_unique_titles_used": 10319
+      },
+      "markets_with_ties": {
+        "MaxPrice": 457,
+        "Ridge": 0,
+        "Main": 0
+      },
+      "saved_pick_in_my_candidate_set": {
+        "MaxPrice": 1000,
+        "Ridge": 1000,
+        "Main": 1000
+      },
+      "strategies": {
+        "Random": {
+          "mean_points_EV": 87.1553,
+          "share_ge90_pct_EV": 19.645,
+          "mean_price_EV": 18.99805
+        },
+        "MaxPrice": {
+          "mean_points_EV": 88.69451666666666,
+          "share_ge90_pct_EV": 41.475,
+          "mean_price_EV": 29.388,
+          "mean_points_saved_picks": 88.682,
+          "share_ge90_pct_saved_picks": 41.0,
+          "mean_price_saved_picks": 29.388
+        },
+        "Ridge": {
+          "mean_points_EV": 89.772,
+          "share_ge90_pct_EV": 60.5,
+          "mean_price_EV": 25.505,
+          "mean_points_saved_picks": 89.772,
+          "share_ge90_pct_saved_picks": 60.5,
+          "mean_price_saved_picks": 25.505
+        },
+        "Main": {
+          "mean_points_EV": 89.98,
+          "share_ge90_pct_EV": 64.7,
+          "mean_price_EV": 25.142,
+          "mean_points_saved_picks": 89.98,
+          "share_ge90_pct_saved_picks": 64.7,
+          "mean_price_saved_picks": 25.142
+        }
+      },
+      "bootstrap_own_seed": {
+        "Main-MaxPrice__ge90_pctp": {
+          "diff": 23.7,
+          "ci95": [
+            20.1,
+            27.3
+          ]
+        },
+        "Main-MaxPrice__points": {
+          "diff": 1.298,
+          "ci95": [
+            1.122975,
+            1.477
+          ]
+        },
+        "Main-MaxPrice__price_usd": {
+          "diff": -4.246,
+          "ci95": [
+            -4.511,
+            -3.981
+          ]
+        },
+        "Ridge-MaxPrice__ge90_pctp": {
+          "diff": 19.5,
+          "ci95": [
+            15.8,
+            23.2
+          ]
+        },
+        "Ridge-MaxPrice__points": {
+          "diff": 1.09,
+          "ci95": [
+            0.909,
+            1.274
+          ]
+        },
+        "Ridge-MaxPrice__price_usd": {
+          "diff": -3.883,
+          "ci95": [
+            -4.124,
+            -3.6449750000000005
+          ]
+        },
+        "Main-Ridge__ge90_pctp": {
+          "diff": 4.2,
+          "ci95": [
+            1.4,
+            7.1
+          ]
+        },
+        "Main-Ridge__points": {
+          "diff": 0.208,
+          "ci95": [
+            0.087,
+            0.331
+          ]
+        },
+        "Main-Ridge__price_usd": {
+          "diff": -0.363,
+          "ci95": [
+            -0.64,
+            -0.086
+          ]
+        }
+      }
+    },
+    "50": {
+      "checks": {
+        "n_markets": 1000,
+        "all_size_20": true,
+        "all_20_distinct_titles": true,
+        "all_within_budget": true,
+        "max_price_seen": 50.0,
+        "pool_unique_titles_used": 12186
+      },
+      "markets_with_ties": {
+        "MaxPrice": 237,
+        "Ridge": 0,
+        "Main": 2
+      },
+      "saved_pick_in_my_candidate_set": {
+        "MaxPrice": 1000,
+        "Ridge": 1000,
+        "Main": 1000
+      },
+      "strategies": {
+        "Random": {
+          "mean_points_EV": 87.83340000000001,
+          "share_ge90_pct_EV": 29.849999999999998,
+          "mean_price_EV": 24.9464
+        },
+        "MaxPrice": {
+          "mean_points_EV": 90.18269999999998,
+          "share_ge90_pct_EV": 63.535,
+          "mean_price_EV": 47.406,
+          "mean_points_saved_picks": 90.195,
+          "share_ge90_pct_saved_picks": 63.6,
+          "mean_price_saved_picks": 47.406
+        },
+        "Ridge": {
+          "mean_points_EV": 90.967,
+          "share_ge90_pct_EV": 77.5,
+          "mean_price_EV": 41.739,
+          "mean_points_saved_picks": 90.967,
+          "share_ge90_pct_saved_picks": 77.5,
+          "mean_price_saved_picks": 41.739
+        },
+        "Main": {
+          "mean_points_EV": 91.105,
+          "share_ge90_pct_EV": 80.75,
+          "mean_price_EV": 41.461,
+          "mean_points_saved_picks": 91.102,
+          "share_ge90_pct_saved_picks": 80.7,
+          "mean_price_saved_picks": 41.461
+        }
+      },
+      "bootstrap_own_seed": {
+        "Main-MaxPrice__ge90_pctp": {
+          "diff": 17.1,
+          "ci95": [
+            13.9,
+            20.3
+          ]
+        },
+        "Main-MaxPrice__points": {
+          "diff": 0.907,
+          "ci95": [
+            0.734,
+            1.081
+          ]
+        },
+        "Main-MaxPrice__price_usd": {
+          "diff": -5.945,
+          "ci95": [
+            -6.390025,
+            -5.499975
+          ]
+        },
+        "Ridge-MaxPrice__ge90_pctp": {
+          "diff": 13.9,
+          "ci95": [
+            10.6,
+            17.3
+          ]
+        },
+        "Ridge-MaxPrice__points": {
+          "diff": 0.772,
+          "ci95": [
+            0.603,
+            0.948
+          ]
+        },
+        "Ridge-MaxPrice__price_usd": {
+          "diff": -5.667,
+          "ci95": [
+            -6.1,
+            -5.249975
+          ]
+        },
+        "Main-Ridge__ge90_pctp": {
+          "diff": 3.2,
+          "ci95": [
+            0.6975000000000022,
+            5.7
+          ]
+        },
+        "Main-Ridge__points": {
+          "diff": 0.135,
+          "ci95": [
+            0.014,
+            0.256
+          ]
+        },
+        "Main-Ridge__price_usd": {
+          "diff": -0.278,
+          "ci95": [
+            -0.697,
+            0.15302499999999963
+          ]
+        }
+      }
+    }
+  }
+}
